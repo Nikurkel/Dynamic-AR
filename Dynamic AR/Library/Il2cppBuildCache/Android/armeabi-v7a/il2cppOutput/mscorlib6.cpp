@@ -794,6 +794,7 @@ IL2CPP_EXTERN_C RuntimeClass* JapaneseCalendar_t9B3E6C121CD0B742AC6413D33DE394DE
 IL2CPP_EXTERN_C RuntimeClass* KeyCollection_tD156AF123B81AE9183976AA8743E5D6B30030CCE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* KeyHandler_tB9094857C733957C9D709512D2AD478828B119FF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Latin1Encoding_t4AD383342243272698FF8CC4E6CF093B105DA016_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LeaseManager_tCB2B24D3B1EB0083B9FF0BA2D4E5E8B84EE94DD1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Level2Map_t26846E0D6A6A0C5990567628ECE6CAAE22BAAB6C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LifetimeServices_tF0C101B662D7B7A3481C924BC01E1623C1AFF6E4_il2cpp_TypeInfo_var;
@@ -4511,6 +4512,32 @@ struct KnownTerminals_tADE399A49DA8B9DC4C28532B56B2FAF668CE3ABF  : public Runtim
 public:
 
 public:
+};
+
+
+// System.LazyHelpers
+struct LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_StaticFields
+{
+public:
+	// System.Object System.LazyHelpers::PUBLICATION_ONLY_SENTINEL
+	RuntimeObject * ___PUBLICATION_ONLY_SENTINEL_0;
+
+public:
+	inline static int32_t get_offset_of_PUBLICATION_ONLY_SENTINEL_0() { return static_cast<int32_t>(offsetof(LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_StaticFields, ___PUBLICATION_ONLY_SENTINEL_0)); }
+	inline RuntimeObject * get_PUBLICATION_ONLY_SENTINEL_0() const { return ___PUBLICATION_ONLY_SENTINEL_0; }
+	inline RuntimeObject ** get_address_of_PUBLICATION_ONLY_SENTINEL_0() { return &___PUBLICATION_ONLY_SENTINEL_0; }
+	inline void set_PUBLICATION_ONLY_SENTINEL_0(RuntimeObject * value)
+	{
+		___PUBLICATION_ONLY_SENTINEL_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PUBLICATION_ONLY_SENTINEL_0), (void*)value);
+	}
 };
 
 
@@ -11637,6 +11664,24 @@ public:
 	{
 		___arrayCharBestFit_16 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___arrayCharBestFit_16), (void*)value);
+	}
+};
+
+
+// System.Threading.LazyThreadSafetyMode
+struct LazyThreadSafetyMode_t96AF79E6AE151D68FDE0622C7121D4D96C369231 
+{
+public:
+	// System.Int32 System.Threading.LazyThreadSafetyMode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(LazyThreadSafetyMode_t96AF79E6AE151D68FDE0622C7121D4D96C369231, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
 	}
 };
 
@@ -34603,6 +34648,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Latin1Encoding__cctor_mEF6569FAF6B5D8578
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.LazyHelpers::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LazyHelpers__cctor_m806E7617AF1274408CCD21F4160D5E5199EA2F79 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = (RuntimeObject *)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(L_0, /*hidden argument*/NULL);
+		((LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_StaticFields*)il2cpp_codegen_static_fields_for(LazyHelpers_tBC1E3FD7EF60CB2923D44FF2A081D5CAB5BA2A5C_il2cpp_TypeInfo_var))->set_PUBLICATION_ONLY_SENTINEL_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -35964,7 +36042,7 @@ IL_0018:
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		bool L_5;
-		L_5 = VirtFuncInvoker0< bool >::Invoke(65 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
+		L_5 = VirtFuncInvoker0< bool >::Invoke(67 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
 		if (L_5)
 		{
 			goto IL_003a;
@@ -35993,7 +36071,7 @@ IL_003a:
 		L_10 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtFuncInvoker0< bool >::Invoke(65 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
+		L_11 = VirtFuncInvoker0< bool >::Invoke(67 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
 		if (L_11)
 		{
 			goto IL_005f;
